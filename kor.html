@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./kor.css" >
+    <title>Document</title>
+</head>
+<body>
+    <p id="number">점수: 0</p>
+    <p id="question">#1 / 50</p>
+    <div class="guess">
+        <p id="guessTitle">음악을 맞춰 보세요!</p>
+        <button id="play" onclick="play_pause()">재생</button>
+        <img src="./lp.gif" id="centerImage">
+        <p id="guessWhat">무엇일까요?!</p>
+        <div class="navBar">
+            <span class="navOne"></span>
+            <span class="navTwo"></span>
+            <span class="navThree"></span>
+            <input id="volumeBar" type="range" min="0" max="100">
+        </div>
+        <input placeholder="여기에 입력하세요... ':' 는 스페이스바로 입력해주세요." id="musicInput" type="text">
+        <audio src="./drama_movie/cruella.mp3" id="music" style="display: none;"></audio>
+        <button id="submit" onclick="check()">이게 맞는 것 같아요!</button>
+        <button id="skip" onclick="skip()">모르겠어요...</button>
+        <script src="./kor.js"></script>
+    </div>
+</body>
+</html>

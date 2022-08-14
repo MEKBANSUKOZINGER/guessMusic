@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./eng.css" >
+    <title>Document</title>
+</head>
+<body>
+    <p id="number">SCORE: 0</p>
+    <p id="question">#1 / 50</p>
+    <div class="guess">
+        <p id="guessTitle">Guess The Music!</p>
+        <button id="play" onclick="play_pause()">play</button>
+        <img src="./lp.gif" id="centerImage">
+        <p id="guessWhat">What Is It?!</p>
+        <div class="navBar">
+            <span class="navOne"></span>
+            <span class="navTwo"></span>
+            <span class="navThree"></span>
+            <input id="volumeBar" type="range" min="0" max="100">
+        </div>
+        <input placeholder="ENTER HERE... BUT WRITE IN ALL SMALL CASES, PLEASE!      and no ':', just type with space " id="musicInput" type="text">
+        <audio src="./drama_movie/cruella.mp3" id="music" style="display: none;"></audio>
+        <button id="submit" onclick="check()">I Think This Must Be Right!</button>
+        <button id="skip" onclick="skip()">I Don`t Know...</button>
+        <script src="./eng.js"></script>
+    </div>
+</body>
+</html>
